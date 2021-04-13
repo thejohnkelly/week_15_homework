@@ -307,6 +307,8 @@ Please include a screenshot of the defaced website.
 
 ![Screen Shot 2021-04-12 at 9 57 48 PM](https://user-images.githubusercontent.com/33046751/114490673-dd207600-9bda-11eb-8a86-430cd894132b.png)
 
+![Screen Shot 2021-04-12 at 10 06 22 PM](https://user-images.githubusercontent.com/33046751/114490944-5cae4500-9bdb-11eb-834e-02260ff37cb9.png)
+
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
