@@ -305,5 +305,8 @@ Your final act is to deface the website using command injection. Follow the walk
     
 Please include a screenshot of the defaced website. 
 
+![Screen Shot 2021-04-12 at 9 57 48 PM](https://user-images.githubusercontent.com/33046751/114490673-dd207600-9bda-11eb-8a86-430cd894132b.png)
+
+
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
