@@ -83,15 +83,15 @@ In today’s globally connected cyber community, network and OS level attacks ar
 
 1. What is the process called that cleans and scrubs user input in order to prevent it from exploiting security holes by proactively modifying user input.
 
-Answer:
+Answer: Input sanitization
 
 2. Name the process that tests user and application-supplied input. The process is designed to prevent malformed data from entering a data information system by verifying user input meets a specific set of criteria (i.e. a string that does not contain standalone single quotation marks).
 
-Answer:
+Answer: Input validation
 
 3. **Secure SDLC** is the process of ensuring security is built into web applications throughout the entire software development life cycle. Name three reasons why organization might fail at producing secure web applications.
 
-Answer: Input sanitization
+Answer: Cost, employee incompetence, or possibly security system failures
 
 4. How might an attacker exploit the `robots.txt` file on a web server?
 
@@ -105,7 +105,7 @@ Answer: Domain masking
 
    - Explain why you chose the answer that you did.
 
-Answer: While both are necessary to protect both users and systems, server-side validation is preferred because it allows rthe organization greater control over security. Client-side validation can be turned off or even bypassed in some clients making it the less secure option.
+Answer: FALSE. While both are necessary to protect both users and systems, server-side validation is preferred because it allows rthe organization greater control over security. Client-side validation can be turned off or even bypassed in some clients making it the less secure option.
 
 ____
 
@@ -152,11 +152,11 @@ Security enhancements designed to require users to present two or more pieces of
    
 2. True or False: A password and pin is an example of 2-factor authentication.
 
-Answer:
+Answer: True
    
 3. True or False: A password and `google authenticator app` is an example of 2-factor authentication.
 
-Answer: False
+Answer: False, when combines these are a form of multifactor authentication
    
 4. What is a constrained user interface? 
 
@@ -236,26 +236,26 @@ Your final act is to deface the website using command injection. Follow the walk
 
 - After completing the second challenge, you will be provided with an option to continue to the next challenge.
 
-   ![cracked credit cards](Images/credit_cards-cracked.png)
+  
 
 - There should be two webpages at the bottom of the window. The one on top is the original, and the one on the bottom is the defaced webpage.
 
-   ![original webpage](Images/original_defaced.png)
+
 
 - Start Foxy Proxy (WebScarab) to send all GET/POST requests from Firefox to the WebScarab proxy intercept.
 
-   ![Foxy Proxy](Images/foxy_proxy_scab.png)
+
 
 - Click **TCP** and then the **View Network** button and send the request to WebScarab.
 
-   ![View Network](Images/view_network_tcp.png)
+
 
 - The WebScarab window will open. 
 
    - In the **URL Encoded** tab, find the **File** and **Value** form fields. 
    - This is where you will perform your command injection.
    
-    ![File Field](Images/webscarab_file_value_field.png)
+
 
 - Next, perform a test and see if this shell is vulnerable to command injection. 
 
@@ -265,15 +265,14 @@ Your final act is to deface the website using command injection. Follow the walk
    
    - Click **Accept Changes**.
    
-     ![whoami](Images/whoami_pwd_image.png)
+)
    
    - On the next window, click **Accept Changes** twice.
-   
-     ![accept](Images/webscarab_2nd_window.png)
+
  
 - Scroll to the bottom of the **Current Network Status** window and observe the results for both of the `whoami` and `pwd` commands.
 
-    ![whoami & pwd](Images/whoami_pwd.png)
+
 
    - The results show that we are the root user and our current working directory is `/var/lib/tomcat6`.
 
@@ -285,11 +284,10 @@ Your final act is to deface the website using command injection. Follow the walk
    
       - **Note**: Windows users will need to type: `tcp && dir /s 'webgoat_challenge_guest.jsp'`
    
-   ![find command](Images/webscarab_find_command.png)
+
    
    - The absolute path is: `./owaspbwa/owaspbwa-svn/var/lib/tomcat6/webapps/WebGoat/webgoat_challenge_guest.jsp`.
-   
-   ![absolute path](Images/webscarab_abolute_path.png)
+
    
    - Remember, our present working directory is `/var/lib/tomcat6`. Therefore, the relative path is `webapps/WebGoat/webgoat_challenge_guest.jsp`.
    
